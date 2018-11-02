@@ -1,0 +1,22 @@
+@media (min-width: 320px) and (max-width: 767px){
+    .catalouge-list > .listings {
+        width: 45.8%;
+    }
+    .block-head > .row > .col-12:last-child{
+        margin-top: 10px;
+    }
+    .catalouge-list > .listings > .description > .bold {
+        font-size: 16px;
+    }
+    .catalouge-list > .listings > .description > .title-product{
+        font-size: 12px;
+    }
+    .rating-div{
+        font-size: 12px;
+    }
+    .catalouge-list > .listings > .img-product > img {
+        width: 100%;
+        object-fit: cover;
+        height: 130px;
+    }
+}
