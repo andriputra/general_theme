@@ -8,7 +8,8 @@
     background: -ms-linear-gradient(45deg, rgba(46,49,146,1) 0%, rgba(24,255,255,1) 100%);
     background: linear-gradient(45deg, rgba(46,49,146,1) 0%, rgba(24,255,255,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2e3192', endColorstr='#18ffff', GradientType=1 );
-  }
+    color: #ffffff;
+}
   .color-ocean-blue{
     color: rgba(46,49,146,1);
   }
@@ -270,6 +271,7 @@ h6{
 }
 .bold{
     font-weight: 600;
+    font-family: 'Open sans', sans-serif;
 }
 p{
     margin-bottom: 0px;
@@ -507,11 +509,12 @@ a.wishlist.active {
 }
 .box-border{
     box-shadow: 0 2px 6px rgba(0,0,0,.12);
-    padding: 15px 24px;
+    padding: 15px;
     box-sizing: border-box;
     margin-bottom: 10px;
     border-radius: 4px;
     background: #ffffff;
+    border: 1px solid #bccade;
 }
 .flex-wrapper{
     display: flex;
@@ -574,4 +577,113 @@ a.wishlist.active {
     display: inline-block;
     width: 50%;
     font-size: 14px;
+}
+.form-control{
+    font-size: 14px; 
+}
+.mb-2{
+    margin-bottom: .5rem;
+}
+.description{
+    margin-top: 10px;
+}
+.divider{
+    width: 100%;
+    height: 1px;
+    background: #c1cadb;
+    margin: 10px 0px;
+    display: block;
+}
+.left-wrapper{
+    width: calc(100% - 150px);
+}
+.w100{
+    width: 100%;
+}
+.subtotal,
+.collapse > ul > li, 
+.collapsing > ul > li,
+ul.methode > li{
+    border-top: 1px solid #becadc;
+    padding-top: 5px;
+    margin-bottom: 5px;
+}
+.modal .d-flex{
+    margin-bottom: 10px;
+}
+.collapse > ul,
+.collapsing > ul,
+ul.methode{
+    margin-bottom: 0px;
+    padding-left: 0px;
+    list-style: none;
+}
+.modal .collapsing > ul > li{
+    display: flex;
+}
+ul.methode > li img{
+    margin-right: 5px;
+    width: 60px;
+}
+ul.methode > li .fa{
+    float: right;
+    margin-top: 10px
+}
+ul.methode > li a{
+    color: #333333;
+}
+ul.methode > li{
+    padding-top: 10px;
+    margin-bottom: 10px;
+}
+ul.methode > li:last-child{
+    border-bottom: 1px solid #becadc;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+.basket-header-text .partner-logo{
+    float: right;
+}
+.box-border-blue{
+    border: 1px solid #00a4bd;
+    background: #b2e4eb;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+.box-border-gray{
+    background: #efefef;
+    border: 1px solid #c1cadb;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+.italic-style{
+    font-style: italic;
+}
+.payment-merchant{
+    width: 720px;
+    margin: 0 auto;
+}
+.payment-merchant .custom{
+    padding: 30px 60px;
+    margin-bottom: 0px;
+    border-bottom: none;
+}
+.timer span.hours,
+.timer span.minutes,
+.timer span.seconds{
+    font-size: 28px;
+    font-weight: 100;
+}
+.call .left-wrapper{
+    width: calc (100% - 80px);
+}
+.status-payment{
+    background: #f5f9fc;
+    padding: 20px;
+    border-width: 0px 1px 8px 1px;
+    border-style: solid;
+    border-color: #b9cae0;
+    border-radius: 0px 0px 5px 5px;
 }

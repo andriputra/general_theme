@@ -19,4 +19,18 @@
         object-fit: cover;
         height: 130px;
     }
+    .flex-wrapper,
+    .d-flex{
+        display: block !important;
+    }
+    .left-wrapper {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .payment-merchant .custom{
+        padding: 20px;
+    }
+    .payment-merchant{
+        width: 100%;
+    }
 }

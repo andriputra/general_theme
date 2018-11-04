@@ -28,15 +28,15 @@
 <body>
   <section class="checkout">
     <div class="container">
+      <div class="heading-basket">
+        <h6>Checkout</h6>
+      </div>
       <div class="row">
         <div class="col-md-8 col-sm-8 col-12">
-          <div class="heading-basket">
-            <h6>Checkout</h6>
-          </div>
           <!-- Address Box -->
           <div class="basket-header-text"><i class="fa fa-map-marker" aria-hidden="true"></i> Shipping Address</div>
           <div class="box-border address-box">
-            <div class="d-flexr">
+            <div class="flex-wrapper">
               <div class="left-wrapper">
                 <span class="receiver-name bold">Agus Andri Putra</span> <span class="address-name">Rumah</span>
                 <div class="phone-number">
@@ -61,7 +61,7 @@
               <span class="label-sold-by">Penjual:</span> <span class="seller-name bold">anugrah spesialis sarung</span> 
             </div>
             <div class="d-flex">
-              <div class="flex-fill">
+              <div class="flex-fifty">
                 <div class="d-flex">
                   <div class="flex-shrink-1 p-2">
                     <div class="thumbnails">
@@ -76,8 +76,7 @@
                         <div class="berat">
                           <div class="detail-label">Berat : 6,50 kg</div>
                         </div>
-                      </div><!--
-                      -->
+                      </div>
                       <div class="inline-block">
                         <div class="jumlah">
                           <div class="detail-label">Jumlah : 1</div>
@@ -87,8 +86,8 @@
                   </div>
                 </div>
               </div>
-              <div class="flex-fill p-2">
-                <div class="product-name bold"><p>Kurir Pengiriman</p></div>
+              <div class="flex-fifty p-2">
+                <div class="product-name bold m"><p>Kurir Pengiriman</p></div>
                 <div class="select-group">
                   <select class="form-control">
                     <option selected>JNE</option>
@@ -96,16 +95,134 @@
                     <option>J&T</option>
                   </select>
                 </div>
+                <div class="check">
+                  <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="customCheck1">
+                    <label class="custom-control-label" for="customCheck1">Asuransi Pengiriman</label>
+                  </div>
+                  <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="customCheck2">
+                    <label class="custom-control-label" for="customCheck2">Dropshiper <a href="#"><i class="fa fa-info-circle" aria-hidden="true"></i></a></label>
+                  </div>
+                </div>
               </div>
             </div>
+            <div class="divider"></div>
           </div>
         </div>
         <div class="col-md-4 col-sm-4 col-12">
-
+          <div class="basket-header-text">Ringkasan Belanja</div>
+          <div class="box-border">
+            <div class="flex-wrapper">
+              <div class="flex-remaining">
+                <p>Total Harga (1 barang)</p>
+              </div>
+              <div class="flex-remaining text-right">
+                <span class="bold">Rp 35.000</span>
+              </div>
+            </div>
+            <div class="flex-wrapper">
+              <div class="flex-remaining">
+                <p>Total Ongkos Kirim</p>
+              </div>
+              <div class="flex-remaining text-right">
+                <span class="bold">Rp 9.000</span>
+              </div>
+            </div>
+            <div class="flex-wrapper">
+              <div class="flex-remaining">
+                <p>Asuransi Pengiriman</p>
+              </div>
+              <div class="flex-remaining text-right">
+                <span class="bold">Rp 70</span>
+              </div>
+            </div>
+            <div class="description">
+              <p>Dengan mengaktifkan asuransi, Saya menyetujui <a class="link magenta-color" href="#">syarat dan ketentuan yang berlaku.</a></p>
+            </div>
+            <div class="divider"></div>
+            <div class="flex-wrapper">
+              <div class="flex-remaining">
+                <p class="bold">Asuransi Pengiriman</p>
+              </div>
+              <div class="flex-remaining text-right">
+                <p class="f-18 bold">Rp 44.070</p>
+              </div>
+            </div>
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="customCheck3">
+              <label class="custom-control-label" for="customCheck3">TopDonasi <a href="#"><i class="fa fa-info-circle" aria-hidden="true"></i></a></label>
+            </div>
+            <button class="btn gradient-ocean-blue w-100" data-toggle="modal" data-target="#exampleModal">
+              Bayar
+            </button>
+          </div>
         </div>
       </div>
     </div>
   </section>
 </body>
-
 </html>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Metode Pembayaran</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="box-border">
+          <h6>Detail Tagihan</h6>
+          <div class="divider"></div>
+          <div class="d-flex">
+            <div class="flex-shrink-1 p-2">
+              <div class="thumbnails">
+                <img src="assets/img/thumb_product.jpg" class="img-fluid">
+              </div>
+            </div>
+            <div class="w-100">
+              <div class="product-name"><p>sarung jok avanza xenia mobilio brv</p></div>
+              <div class="detail-label">2 Barang (6,50 kg)</div>
+              <div class="price-product bold blue-color f-18">Rp 35.000</div>
+            </div>
+          </div>
+          <div class="subtotal d-block" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+            <div class="inline-block">Subtotal</div>
+            <div class="inline-block text-right">Rp. 44.000</div>
+          </div>
+          <div class="collapse" id="collapseExample">
+            <ul>
+              <li class="d-block"><div class="inline-block">Harga (1 barang)</div><div class="inline-block text-right">Rp 35.000</div></li>
+              <li class="d-block"><div class="inline-block">Ongkos Kirim</div><div class="inline-block text-right">Rp 5.000</div></li>
+              <li class="d-block"><div class="inline-block">Asuransi Pengiriman</div><div class="inline-block text-right">Rp 50</div></li>
+            </ul>
+          </div>
+        </div>
+        <div class="basket-header-text">
+          <h6>Pilih metode pembayaran</h6>
+        </div>
+        <div class="box-border">
+          <div class="basket-header-text">
+            <p>Transfer Bank (Verifikasi manual)</p>
+          </div>
+          <ul class="methode"> 
+            <li class="bank"><a href="#"><img src="assets/img/bca.jpg" class="img-fluid"><span>Bank BCA</span> <i class="i fa fa-chevron-right"></i></a></li>
+            <li class="bank"><a href="#"><img src="assets/img/mandiri.jpg" class="img-fluid"><span>Bank Manidi</span> <i class="i fa fa-chevron-right"></i></a></li>
+            <li class="bank"><a href="#"><img src="assets/img/cimb.png" class="img-fluid"><span>Bank CIMB</span> <i class="i fa fa-chevron-right"></i></a></li>
+          </ul>
+          <div class="basket-header-text">
+            <p>Transfer Virtual (Verifikasi Otomatis)</p>
+          </div>
+          <ul class="methode"> 
+            <li class="bank"><a href="#"><img src="assets/img/bca.jpg" class="img-fluid"><span>Bank BCA</span> <i class="i fa fa-chevron-right"></i></a></li>
+            <li class="bank"><a href="#"><img src="assets/img/mandiri.jpg" class="img-fluid"><span>Bank Manidi</span> <i class="i fa fa-chevron-right"></i></a></li>
+            <li class="bank"><a href="#"><img src="assets/img/cimb.png" class="img-fluid"><span>Bank CIMB</span> <i class="i fa fa-chevron-right"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
