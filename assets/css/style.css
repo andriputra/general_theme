@@ -291,6 +291,30 @@ p{
 .f-18{
     font-size: 18px;
 }
+.mb-5{
+    margin-bottom: 5px;
+}
+.mb-10{
+    margin-bottom: 10px;
+}
+.mb-15{
+    margin-bottom: 15px;
+}
+.mb-20{
+    margin-bottom: 20px;
+}
+.mb-30{
+    margin-bottom: 30px;
+}
+.orange{
+    color: #fe7011;
+}
+a{
+    display: inherit;
+}
+.p-5{
+    padding: 5px 5px;
+}
 .breadcrumb{
     margin-top: 20px;
     background: transparent;
@@ -316,6 +340,9 @@ p{
 }
 .sidebar-section{
     margin-bottom: 30px;
+}
+.btn{
+    font-size: 16px !important;
 }
 input.form-control{
     border: 1px solid #c1cadb;
@@ -679,6 +706,12 @@ ul.methode > li:last-child{
 .call .left-wrapper{
     width: calc (100% - 80px);
 }
+.call .d-flex{
+    align-items: center;
+}
+.call .flex-shrink-1 img{
+    padding-right: 20px;
+}
 .status-payment{
     background: #f5f9fc;
     padding: 20px;
@@ -686,4 +719,62 @@ ul.methode > li:last-child{
     border-style: solid;
     border-color: #b9cae0;
     border-radius: 0px 0px 5px 5px;
+}
+.border-blue{
+    border-color: #4569cd;
+}
+.color-blue{
+    color: #4569cd;
+}
+.timer{
+    position: relative;
+    margin-bottom: 35px;
+}
+.double-dot::after {
+    content: ':';
+    color: inherit;
+    font-size: inherit;
+    position: relative;
+    margin-left: 5px;
+    margin-right: 2px;
+}
+.timer span.hours::before,
+.timer span.minutes::before,
+.timer span.seconds::before{
+    content: 'Jam';
+    position: absolute;
+    bottom: -24px;
+    font-size: 16px;
+    color: inherit;
+}
+.timer span.minutes::before{
+    content: 'Menit';
+    left: 46.5%;
+}
+.timer span.seconds::before{
+    content: 'Detik';
+}
+.flex-wrapper.status{
+    align-items: flex-start
+}
+.flex-wrapper .circle{
+    border-radius: 50%;
+    width: 35px;
+    text-align: center;
+    height: 35px;
+    border: 1px solid #4569cd;
+    line-height: 31px;
+    color: #4569cd;
+    margin-right: 20px;
+}
+.block-gray{
+    background: #efefef;
+    padding: 5px 10px;
+}
+.block-gray .fa{
+    color: #f7941d; 
+}
+.box-right{
+    text-align: right;
+    padding-left: 15px;
 }

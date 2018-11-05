@@ -33,4 +33,14 @@
     .payment-merchant{
         width: 100%;
     }
+    .timer span.minutes::before {
+        left: 42.5%;
+    }
+    .call .d-flex .flex-shrink-1{
+        display: inline-block;
+    }
+    .call .d-flex .w-100{
+        width: 52% !important;
+        display: inline-block;
+    }
 }

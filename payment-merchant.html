@@ -28,24 +28,19 @@
 <body>
   <div class="section payment-merchant">
     <div class="box-border custom">
-      <p class="bold text-center">Segera selesaikan pembayaran Anda sebelum stok habis. </p>
-      <div class="box-border-gray">
+      <p class="bold text-center mb-10">Segera selesaikan pembayaran Anda sebelum stok habis.</p>
+      <div class="box-border-gray border-blue">
         <p class="text-center">Sisa waktu pembayaran Anda</p>
         <div id="clockdiv" class="timer text-center">
-          <span class="hours"></span>:
-          <span class="minutes"></span>:
+          <span class="hours double-dot"></span>
+          <span class="minutes double-dot"></span>
           <span class="seconds"></span>
-        </div>
-        <div class="text-center">
-          <span class="jam">Jam</span>
-          <span class="min">Min</span>
-          <span class="det">Detik</span>
         </div>
         <p class="text-center italic-style">(Sebelum Selasa 6 November 2018 pukul 01:20)</p>
       </div>
       <div class="info-point">
-        <p class="text-center">Referensi pembayaran</p>
-        <p class="bold text-center">PYM/20180826/XVIII/VIII/235702866</p>
+        <p class="text-center mb-10">Referensi pembayaran</p>
+        <p class="bold text-center mb-10">PYM/20180826/XVIII/VIII/235702866</p>
         <div class="divider"></div>
         <div class="call">
           <div class="d-flex">
@@ -58,9 +53,10 @@
             </div>
           </div>
         </div>
+        <div class="divider"></div>
         <p>Jumlah yang harus dibayar:</p>
-        <p class="bold">Rp 44.000</p>
-        <p>Pembayaran dapat juga dilakukan melalui retail lain dengan biaya layanan berikut:</p>
+        <p class="bold mb-30">Rp 44.000</p>
+        <p class="mb-10">Pembayaran dapat juga dilakukan melalui retail lain dengan biaya layanan berikut:</p>
         <ul class="methode"> 
           <li class="bank"><a href="#"><img src="assets/img/indo.png" class="img-fluid"><span>JNE</span> <i class="fa bold">Rp 2.000</i></a></li>
           <li class="bank"><a href="#"><img src="assets/img/indo.png" class="img-fluid"><span>Indomaret</span> <i class="fa bold">Rp 9000</i></a></li>
@@ -104,14 +100,14 @@
       </div>
     </div>
     <div class="status-payment">
-      <h6> <i class="fa fa-file-text-o" aria-hidden="true"></i> Status Pembayaran</h6>
+      <h6 class="mb-15"> <i class="fa fa-file-text-o" aria-hidden="true"></i> Status Pembayaran</h6>
       <div class="flex-wrapper">
         <div class="flex-remaining text-center">
-          <i class="fa fa-info-circle" aria-hidden="true"></i>
-          <p class="orange">Menunggu Pembayaran</p>
+          <img src="assets/img/warningcon.png" class="img-fluid inline-block mb-10"/>
+          <p class="orange f-16">Menunggu Pembayaran</p>
         </div>
         <div class="flex-remaining">
-          <p>Pantau status pembayaran anda pada halaman Status Pembayaran.</p>
+          <p class="f-16 mb-20">Pantau status pembayaran anda pada halaman Status Pembayaran.</p>
           <button class="btn gradient-ocean-blue w-100" type="button">Check Status Pembayaran</button>
         </div>
       </div>
