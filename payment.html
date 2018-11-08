@@ -159,7 +159,7 @@
                 <p class="f-18 bold">Rp 44.070</p>
               </div>
             </div>
-            <div class="custom-control custom-checkbox">
+            <div class="custom-control custom-checkbox mb-15">
               <input type="checkbox" class="custom-control-input" id="customCheck3">
               <label class="custom-control-label" for="customCheck3">TopDonasi <a href="#"><i class="fa fa-info-circle" aria-hidden="true"></i></a></label>
             </div>
@@ -248,6 +248,7 @@
   </div>
 </div>
 
+<!-- Metode Pembayaran -->
 <div class="modal fade" id="exampleModalIndomaret" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
@@ -257,7 +258,7 @@
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-      <div class="modal-body">
+      <div class="modal-body payment-methode">
         <div class="box-border">
           <h6>Detail Tagihan</h6>
           <div class="divider"></div>
@@ -297,9 +298,233 @@
             <p class="text-center"><strong>Dapatkan kode pembayaran setelah menekan tombol bayar</strong>, tunjukan ke kasir dan bayar sesuai tagihan</p>
           </div>
         </div>
+        <div class="choose-methode">
+          <a href="#" data-toggle="modal" data-target="#MethodeOther">Choose Metode Pembayaran Lainnya</a>
+        </div>
       </div>
       <div class="modal-footer">
         <a href="payment-merchant.html" class="btn btn-secondary gradient-ocean-blue w-100">Bayar</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Other Methode -->
+<div class="modal fade" id="MethodeOther" tabindex="-1" role="dialog" aria-labelledby="MethodeOther" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Metode Pembayaran</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body payment-methode choose-other">
+        <div class="box-border">
+          <h6>Detail Tagihan</h6>
+          <div class="divider"></div>
+          <div class="d-flex">
+            <div class="flex-shrink-1 p-2">
+              <div class="thumbnails">
+                <img src="assets/img/katalog.jpg" class="img-fluid">
+              </div>
+            </div>
+            <div class="w-100">
+              <div class="product-name"><p>sarung jok avanza xenia mobilio brv</p></div>
+              <div class="detail-label">2 Barang (6,50 kg)</div>
+              <div class="price-product bold blue-color f-18">Rp 35.000</div>
+            </div>
+          </div>
+          <div class="subtotal d-block" data-toggle="collapse" href="#collapseOther" role="button" aria-expanded="false" aria-controls="collapseExample">
+            <div class="inline-block">Subtotal</div>
+            <div class="inline-block text-right">Rp. 44.000 <i class="fa fa-chevron-down"></i></div>
+          </div>
+          <div class="collapse" id="collapseOther">
+            <ul>
+              <li class="d-block"><div class="inline-block">Harga (1 barang)</div><div class="inline-block text-right">Rp 35.000</div></li>
+              <li class="d-block"><div class="inline-block">Ongkos Kirim</div><div class="inline-block text-right">Rp 5.000</div></li>
+              <li class="d-block"><div class="inline-block">Asuransi Pengiriman</div><div class="inline-block text-right">Rp 50</div></li>
+            </ul>
+          </div>
+        </div>
+        <div class="box-border">
+          <div class="basket-header-text">
+            <h6>Transfer Bank (Verifikasi Manual)</h6>
+            <div class="divider"></div>
+          </div>
+          <ul class="under-list">
+            <li data-toggle="modal" data-target="#TransferModal">
+              <div class="bank-logo"><img src="assets/img/bca_bank.jpg" class="img-fluid"/></div>
+              <div class="text"><p>Bank BCA</p><span>Diverifikasi Setelah 07:00 WIB</span></div>
+              <div class="chevron-right text-right"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
+            </li>
+            <li data-toggle="modal" data-target="#TransferModal">
+              <div class="bank-logo"><img src="assets/img/bni_bank.png" class="img-fluid"/></div>
+              <div class="text"><p>Bank BNI</p><span>Diverifikasi Setelah 07:00 WIB</span></div>
+              <div class="chevron-right text-right"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
+            </li>
+            <li data-toggle="modal" data-target="#TransferModal">
+              <div class="bank-logo"><img src="assets/img/danamon.png" class="img-fluid"/></div>
+              <div class="text"><p>Bank Danamon</p><span>Diverifikasi Setelah 07:00 WIB</span></div>
+              <div class="chevron-right text-right"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
+            </li>
+          </ul>
+        </div>
+        <div class="box-border">
+          <div class="basket-header-text">
+            <h6>Transfer Virtual Account (Verifikasi Otomatis)</h6>
+            <div class="divider"></div>
+          </div>
+          <ul class="under-list">
+            <li data-toggle="modal" data-target="#VAModal">
+              <div class="bank-logo"><img src="assets/img/bca_bank.jpg" class="img-fluid"/></div>
+              <div class="text"><p>BCA Virtual Account</p></div>
+              <div class="chevron-right text-right"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
+            </li>
+            <li data-toggle="modal" data-target="#VAModal">
+              <div class="bank-logo"><img src="assets/img/bni_bank.png" class="img-fluid"/></div>
+              <div class="text"><p>BNI Virtual Account</p></div>
+              <div class="chevron-right text-right"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
+            </li>
+            <li data-toggle="modal" data-target="#VAModal">
+              <div class="bank-logo"><img src="assets/img/danamon.png" class="img-fluid"/></div>
+              <div class="text"><p>Danamon Virtual Account</p></div>
+              <div class="chevron-right text-right"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Transfer Methode -->
+<div class="modal fade" id="TransferModal" tabindex="-1" role="dialog" aria-labelledby="TransferModal" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Pembayaran</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body payment-methode">
+        <div class="box-border">
+          <h6>Detail Tagihan</h6>
+          <div class="divider"></div>
+          <div class="d-flex">
+            <div class="flex-shrink-1 p-2">
+              <div class="thumbnails">
+                <img src="assets/img/katalog.jpg" class="img-fluid">
+              </div>
+            </div>
+            <div class="w-100">
+              <div class="product-name"><p>sarung jok avanza xenia mobilio brv</p></div>
+              <div class="detail-label">2 Barang (6,50 kg)</div>
+              <div class="price-product bold blue-color f-18">Rp 35.000</div>
+            </div>
+          </div>
+          <div class="subtotal d-block" data-toggle="collapse" href="#collapseTransfer" role="button" aria-expanded="false" aria-controls="collapseExample">
+            <div class="inline-block">Subtotal</div>
+            <div class="inline-block text-right">Rp. 44.000 <i class="fa fa-chevron-down"></i></div>
+          </div>
+          <div class="collapse" id="collapseTransfer">
+            <ul>
+              <li class="d-block"><div class="inline-block">Harga (1 barang)</div><div class="inline-block text-right">Rp 35.000</div></li>
+              <li class="d-block"><div class="inline-block">Ongkos Kirim</div><div class="inline-block text-right">Rp 5.000</div></li>
+              <li class="d-block"><div class="inline-block">Asuransi Pengiriman</div><div class="inline-block text-right">Rp 50</div></li>
+            </ul>
+          </div>
+        </div>
+        <div class="box-border">
+          <div class="basket-header-text">
+            <h6>Transfer Bank BCA</h6>
+            <div class="divider"></div>
+          </div>
+          <div class="form-transfer">
+            <form>
+              <div class="form-group">
+                <label>No. Rekening Anda</label>
+                <input class="form-control" type="text"/>
+                <small>Masukan nomor rekening sesuai buku tabungan</small>
+              </div>
+              <div class="form-group">
+                <label>Nama Pemilik Rekening</label>
+                <input class="form-control" type="text"/>
+                <small>Masukan nama pemilik rekening sesuai buku tabungan</small>
+              </div>
+              <div class="description">
+                  <p>Jika melalui Teller, isi <strong>Nama Pemilik Rekening</strong>
+                     dengan nama Penyetor dan <strong>Nomor Rekening</strong> dengan 0000</p>
+                  <p>Demi keamanan transaksi Anda, pastikan untuk <strong>tidak menginformasikan bukti dan data pembayaran kepada pihak manapun kecuali Tokopedia.</strong></p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <a href="#" class="btn btn-secondary gradient-ocean-blue w-100">Bayar</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Virtual Account Modal -->
+<div class="modal fade" id="VAModal" tabindex="-1" role="dialog" aria-labelledby="VAModal" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Pembayaran</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body payment-methode">
+        <div class="box-border">
+          <h6>Detail Tagihan</h6>
+          <div class="divider"></div>
+          <div class="d-flex">
+            <div class="flex-shrink-1 p-2">
+              <div class="thumbnails">
+                <img src="assets/img/katalog.jpg" class="img-fluid">
+              </div>
+            </div>
+            <div class="w-100">
+              <div class="product-name"><p>sarung jok avanza xenia mobilio brv</p></div>
+              <div class="detail-label">2 Barang (6,50 kg)</div>
+              <div class="price-product bold blue-color f-18">Rp 35.000</div>
+            </div>
+          </div>
+          <div class="subtotal d-block" data-toggle="collapse" href="#collapseVirtual" role="button" aria-expanded="false" aria-controls="collapseExample">
+            <div class="inline-block">Subtotal</div>
+            <div class="inline-block text-right">Rp. 44.000 <i class="fa fa-chevron-down"></i></div>
+          </div>
+          <div class="collapse" id="collapseVirtual">
+            <ul>
+              <li class="d-block"><div class="inline-block">Harga (1 barang)</div><div class="inline-block text-right">Rp 35.000</div></li>
+              <li class="d-block"><div class="inline-block">Ongkos Kirim</div><div class="inline-block text-right">Rp 5.000</div></li>
+              <li class="d-block"><div class="inline-block">Asuransi Pengiriman</div><div class="inline-block text-right">Rp 50</div></li>
+            </ul>
+          </div>
+        </div>
+        <div class="box-border">
+          <div class="basket-header-text">
+            <h6>BCA Virtual Account</h6>
+            <div class="divider"></div>
+          </div>
+          <div class="virtual-transaction">
+            <div class="box-yellow">
+              <p>Pastikan transaksi BCA Virtual Account Anda telah terverifikasi sebelum melakukan transaksi kembali dengan metode yang sama.</p>
+            </div>
+            <ul>
+              <li>Periksa kembali data pembayaran Anda sebelum melanjutkan transaksi.</li>
+              <li>Anda akan mendapatkan kode pembayaran BCA Virtual Account yang akan digunakan untuk membayar transaksi ini di berbagai channel pembayaran BCA.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <a href="#" class="btn btn-secondary gradient-ocean-blue w-100">Bayar</a>
       </div>
     </div>
   </div>

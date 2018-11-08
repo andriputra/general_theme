@@ -612,7 +612,7 @@ a.wishlist.active {
 }
 .d-block > .inline-block{
     display: inline-block;
-    width: 50%;
+    width: 49%;
     font-size: 14px;
 }
 .form-control{
@@ -825,3 +825,306 @@ ul.methode > li:last-child{
 .modal.change-address .modal-footer{
     display: block;
 }
+.side-box h4.title-head{
+    color: #30323E;
+    font-size: 18px;
+    padding-bottom: 12px;
+    margin-bottom: 15px;
+}
+.side-box{
+    border: 1px solid #C1CADB;
+    padding: 15px;
+    border-radius: 5px;
+    background: #ffffff;
+}
+.side-box li{
+    display: flex;
+    border-bottom: 1px solid #C1CADB;
+    padding-bottom: 13px;
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+.side-box li .info{
+    flex: 2;
+}
+.side-box li p{
+    margin-bottom: 0px;
+    color: #697687;
+}
+.side-box li p strong,
+.side-box li .price strong{
+    display: block;
+    margin-bottom: 7px;
+    color: #333333;
+}
+.side-box li .price {
+    text-align: right;
+    flex:1;
+}
+.price-total {
+    display: flex;
+    font-size: 16px;
+}
+.price-total.botder-bott {
+    border-bottom: 1px solid #becadc;
+    margin-bottom: 10px;
+}
+.price-total div {
+    flex: 1;
+}
+.price-total .count {
+    text-align: right;
+    color: #697687;
+}
+.total-box {
+    font-size: 16px;
+}
+.total strong {
+    float: right;
+    font-size: 18px;
+}
+.side-box .action {
+    margin-top: 40px;
+}
+.breadcrumb-page{
+    padding: 20px 0px;
+}
+.breadcrumb-page i{
+    margin: 0px 12px;
+}
+.breadcrumb-page .parent{
+    color: #697687;
+}
+.breadcrumb-page .active{
+    color: #30323E;
+    font-weight: 600;
+}
+.checkout-header.pay {
+    margin: 40px 0px 30px;
+}
+.table thead th{
+    border-top: 0px;
+    font-size: 16px;
+}
+.table thead th:nth-child(3){
+    width: 11%;
+}
+.table thead th:nth-child(5){
+    width: 12%;
+}
+.table thead th:nth-child(8){
+    width: 13%;
+}
+.table-item{
+    background: #ffffff;
+}
+.table-item td{
+    vertical-align: text-bottom;
+    color: #697687;
+    font-size: 15px;
+}
+.table-item td:nth-child(2) img{
+    width: 28%;
+}
+.table-item td:nth-child(2) img,
+.table-item td:nth-child(2) span{
+    display: inline-block;
+}
+.table-item td .fa{
+    font-size: 20px;  
+}
+.table-item td.total{
+    color: #30323E;
+    font-weight: 600;
+    font-size: 18px;
+}
+td a.selected{
+    color: #30323E;
+    font-weight: 600;
+}
+.selected span{
+    font-weight: 400;
+}
+.table-item td .dropdown{
+    position: relative;
+}
+.table-item td .dropdown a{
+    display: block;
+    border: 1px solid #ECF0FB;
+    border-radius: 5px;
+    background-color: #F5F9FC;
+    padding: 6px 10px;
+    min-height: 42px;
+}
+.table-item td .dropdown a.dropdown-item{
+    background: #ffffff;
+    border-radius: 0px;
+    border-bottom: 1px solid #dedede;
+    max-height: 42px;
+    font-size: 14px;
+}
+.table-item td .dropdown a img{
+    width: 32%;
+    margin-right: 10px;
+}
+.table-item td .dropdown a.selected{
+    background: transparent;
+    border: none;
+}
+.table-item td .dropdown::after{
+    content:"\f0d7";
+    font-family: 'FontAwesome';
+    position: absolute;
+    right: 14px;
+    top: 11px;
+    font-size: 18px;
+}
+.table-item td .dropdown.ongkir::after{
+    content: none;
+}
+.dropdown-menu.expedisi{
+    padding: 0px;
+}
+th.shipping{
+    width: 17%;
+}
+.table-item tbody{
+    border-bottom: 1px solid #b3bac3;
+}
+.table-item td .fa {
+    font-size: 20px;
+}
+.table-item .inline-block {
+    display: inline-block;
+    width: 70%;
+    vertical-align: middle;
+}
+.table-item td:nth-child(2) img, 
+.table-item td:nth-child(2) span {
+    display: inline-block;
+}
+.table-item .inline-block p {
+    margin-bottom: 0px;
+    font-size: 14px;
+    color: grey;
+    margin-top: 5px;
+}
+.table-item p.input-note {
+    font-size: 12px;
+    border: 1px solid #dde2e6;
+    border-radius: 4px;
+    padding: 5px;
+    margin-top: 10px;
+}
+.cart-view .table thead th:nth-child(3), 
+.cart-view .table thead th:nth-child(5) {
+    width: 17%;
+}
+.cart-view .table thead th:nth-child(4) {
+    width: 16%;
+}
+.footer-btn {
+    display: flex;
+}
+.footer-btn .form-group, 
+.footer-btn .action {
+    width: 50%;
+}
+.footer-btn .form-group input {
+    display: inline-block;
+    border-radius: 50px;
+    width: 60%;
+    margin-right: 20px;
+    height: 40px;
+}
+.footer-btn .action {
+    text-align: right;
+}
+.footer-btn .form-group button {
+    border-radius: 50px;
+    font-size: 14px;
+    height: 40px;
+    box-shadow: 0px 3px 5px rgba(0,0,0,0.3);
+}
+.footer-btn .action button {
+    width: 50%;
+    letter-spacing: normal;
+}
+.side-form input.form-control{
+    margin-bottom: 15px;
+}
+.choose-methode a{
+    display: block;
+    border: 1px solid #becadc;
+    text-align: center;
+    border-radius: 4px;
+    padding: 15px 0px;
+    color: inherit;
+    background: #efefef;
+}
+.choose-methode a:hover{
+    text-decoration: none;
+}
+.modal-body.payment-methode{
+    max-height: 500px;
+    overflow-y: auto;
+}
+.modal-body.payment-methode.choose-other{
+    max-height: 568px;
+}
+ul.under-list{
+    padding-left: 0px;
+    list-style: none;
+    margin-bottom: 0px;
+}
+ul.under-list li{
+    -ms-box-orient: horizontal;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #bccade;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+ul.under-list li:last-child{
+    border-bottom: none;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+ul.under-list li:hover{
+    cursor: pointer;
+}
+ul.under-list li > div{
+    flex: 1 1 20em;
+}
+ul.under-list li > div.text{
+    color: #3c3e4a;
+}
+ul.under-list li > div:first-child{
+    flex: 2 2 4em;
+}
+ul.under-list li > div:last-child{
+    flex: 2 2 1em;
+}
+.form-transfer .form-group input{
+    border-radius: 0px;
+    border-top: 0px;
+    border-right: 0px;
+    border-left: 0px;
+}
+.box-yellow{
+    border: 1px solid #edd97c;
+    color: rgba(0,0,0,.54);
+    background: #fff7da;
+    border-radius: 5px;
+    padding: 12px;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+.virtual-transaction > ul >li{
+    margin-bottom: 10px;
+} 

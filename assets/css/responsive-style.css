@@ -55,6 +55,52 @@
         padding: 0px 0px 5px;
         border-radius: 0px;
     }
+    .table-item{
+        margin-bottom: 40px;
+    }
+    .footer-btn{
+        display: block;
+    }
+    .footer-btn .form-group, .footer-btn .action{
+        width: 100%;
+    }
+    .footer-btn .form-group input{
+        width: 50%;
+        margin-right: 10px;
+    }
+    .footer-btn .action > button{
+        width: 100%;
+    }
+    .table-item td:nth-child(2) img {
+        width: auto;
+    }
+    .table-item .inline-block{
+        width: 100%;
+    }
+    .table-item td:nth-child(2) span{
+        font-size: 14px;
+    }
+    .basket-header-text .partner-logo{
+        width: 24%;
+    }
+    .basket-header-text h6{
+        font-size: 16px;
+    }
+    ul.under-list li > div {
+        flex: 1 1 14em;
+    }
+    ul.under-list li{
+        align-items: flex-start;
+    }
+    ul.under-list li > div:first-child{
+        margin-right: 10px;
+    }
+    ul.under-list li > div.text{
+        font-size: 12px;
+    }
+    ul.under-list li > div:last-child{
+        display: none;
+    }
 }
 @media (min-width: 768px) and (max-width: 1024px){
     .catalouge-list > .listings{
