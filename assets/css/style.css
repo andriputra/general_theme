@@ -309,9 +309,6 @@ p{
 .orange{
     color: #fe7011;
 }
-a{
-    display: inherit;
-}
 .p-5{
     padding: 5px 5px;
 }
@@ -341,14 +338,10 @@ a{
 .sidebar-section{
     margin-bottom: 30px;
 }
-.btn{
-    font-size: 16px !important;
-}
 input.form-control{
     border: 1px solid #c1cadb;
     border-radius: 4px;
     font-size: 14px;
-    margin-bottom: 20px;
 }
 button.btn-primary{
     border: none;
@@ -411,7 +404,7 @@ button.btn-primary{
     line-height: 28px;
 }
 .catalouge-list > .listings{
-    width: 23%;
+    width: 23.4%;
     position: relative;
     display: inline-block;
     border: 1px solid #e5e8eb;
@@ -499,11 +492,17 @@ button.btn-primary{
     flex: 1 1 0;
     color: #8b8d93;
     font-size: 18px;
-    line-height: 43px;
+    line-height: 38px;
 }
 .hover-listings .over a:hover{
     background: #41a1a7;
     color: #fff;
+}
+.listings:hover{
+    cursor: pointer;
+    -webkit-box-shadow: 0px 0px 25px 0px rgba(209,213,215,1);
+    -moz-box-shadow: 0px 0px 25px 0px rgba(209,213,215,1);
+    box-shadow: 0px 0px 25px 0px rgba(209,213,215,1);
 }
 .listings button.hover{
     display: none;
@@ -554,7 +553,8 @@ a.wishlist.active {
     flex: 1 1 0;
 }
 .flex-small{
-    flex: 0 0 0 ;
+    flex: 0 0 1 ;
+    padding-right: 8px;
 }
 .flex-remaining{
     flex: 1 1 0;
@@ -576,9 +576,17 @@ a.wishlist.active {
     margin-top: 10px;
 }
 .btn{
+    font-size: 14px !important;
     border: 1px solid #c1cadb;
     border-radius: 50px;
     font-size: 14px;
+    background-color: transparent;
+}
+.btn.light-btn{
+    color: #333333;
+}
+.no-border{
+    border: none;
 }
 .basket-header-text,
 .heading-basket{
@@ -597,8 +605,10 @@ a.wishlist.active {
     width: 60px;
     height: 60px;
 }
-.d-block{
-    font-size: 0;
+.thumbnails img{
+    object-fit: cover;
+    height: 60px;
+    width: 100%;
 }
 .d-block > .inline-block{
     display: inline-block;
@@ -634,6 +644,10 @@ ul.methode > li{
     border-top: 1px solid #becadc;
     padding-top: 5px;
     margin-bottom: 5px;
+}
+.collapse > ul.no-border > li, 
+.collapsing > ul.no-border > li{
+    border-top: none;
 }
 .modal .d-flex{
     margin-bottom: 10px;
@@ -777,4 +791,37 @@ ul.methode > li:last-child{
 .box-right{
     text-align: right;
     padding-left: 15px;
+}
+.form-group.search{
+    position: relative;
+}
+.form-group > button.left-position{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    border: none;
+    background-color: transparent;
+    height: 34px;
+    width: 40px;
+}
+.form-group > button.right-position{
+    position: absolute;
+    right: 0px;
+    top: 30px;
+    border: none;
+    background-color: transparent;
+    height: 34px;
+    width: 40px;
+}
+.form-group.search.left > input{
+    padding-left: 45px;
+}
+.form-group.search.right > input{
+    padding-right: 45px;
+}
+.modal.change-address > .modal-dialog{
+    max-width: 720px;
+}
+.modal.change-address .modal-footer{
+    display: block;
 }

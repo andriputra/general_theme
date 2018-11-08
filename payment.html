@@ -48,7 +48,7 @@
                 </p>
               </div>
               <div class="right-wrapper change-address-button-wrapper">
-                <button type="button" class="btn btn-white btn--edit">
+                <button type="button" class="btn btn-white btn-edit" data-toggle="modal" data-target="#gantiAlamat">
                   <i class="fa fa-edit" aria-hidden="true"></i> Ganti Alamat
                 </button>
               </div>
@@ -65,7 +65,7 @@
                 <div class="d-flex">
                   <div class="flex-shrink-1 p-2">
                     <div class="thumbnails">
-                      <img src="assets/img/thumb_product.jpg" class="img-fluid">
+                      <img src="assets/img/katalog.jpg" class="img-fluid">
                     </div>
                   </div>
                   <div class="w-100 p-2">
@@ -107,7 +107,17 @@
                 </div>
               </div>
             </div>
-            <div class="divider"></div>
+            <div class="subtotal d-block" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+              <div class="inline-block">Subtotal</div>
+              <div class="inline-block text-right">Rp. 44.000 <i class="fa fa-chevron-down" aria-hidden="true"></i></div>
+            </div>
+            <div class="collapse" id="collapseExample">
+              <ul class="no-border">
+                <li class="d-block"><div class="inline-block">Harga (1 barang)</div><div class="inline-block text-right">Rp 35.000</div></li>
+                <li class="d-block"><div class="inline-block">Ongkos Kirim</div><div class="inline-block text-right">Rp 5.000</div></li>
+                <li class="d-block"><div class="inline-block">Asuransi Pengiriman</div><div class="inline-block text-right">Rp 50</div></li>
+              </ul>
+            </div>
           </div>
         </div>
         <div class="col-md-4 col-sm-4 col-12">
@@ -156,6 +166,17 @@
             <button class="btn gradient-ocean-blue w-100" data-toggle="modal" data-target="#exampleModalIndomaret">
               Bayar
             </button>
+            <div class="divider"></div>
+            <a href="#">
+              <div class="flex-wrapper">
+                <div class="flex-small">
+                  <img src="assets/img/kupon.png" class="img-fluid" style="wdith: "/>
+                </div>
+                <div class="flex-remaining">
+                  <p>Gunakan Kode Promo atau Kupon</p>
+                </div>
+              </div>
+            </a>
           </div>
         </div>
       </div>
@@ -180,7 +201,7 @@
           <div class="d-flex">
             <div class="flex-shrink-1 p-2">
               <div class="thumbnails">
-                <img src="assets/img/thumb_product.jpg" class="img-fluid">
+                <img src="assets/img/katalog.jpg" class="img-fluid">
               </div>
             </div>
             <div class="w-100">
@@ -243,7 +264,7 @@
           <div class="d-flex">
             <div class="flex-shrink-1 p-2">
               <div class="thumbnails">
-                <img src="assets/img/thumb_product.jpg" class="img-fluid">
+                <img src="assets/img/katalog.jpg" class="img-fluid">
               </div>
             </div>
             <div class="w-100">
@@ -279,6 +300,247 @@
       </div>
       <div class="modal-footer">
         <a href="payment-merchant.html" class="btn btn-secondary gradient-ocean-blue w-100">Bayar</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Ganti Alamat -->
+<div class="modal change-address fade" id="gantiAlamat" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Pilih Alamat Pengiriman</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="form-group search left">
+          <input class="form-control" type='text' placeholder="Tulis Nama Alamat/Kota/Kecamatan tujuan pengiriman">
+          <button class="left-position"><i class="fa fa-search" aria-hidden="true"></i></button>
+        </div>
+        <!-- Desktop View -->
+        <div class="d-none d-sm-block">
+          <div class="box-border address-box">
+            <div class="flex-wrapper">
+              <div class="flex-small">
+                <div class="custom-control custom-radio">
+                  <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+                  <label class="custom-control-label" for="customRadio1"></label>
+                </div>
+              </div>
+              <div class="left-wrapper">
+                <span class="receiver-name bold">Agus Andri Putra</span> <span class="address-name">Rumah</span>
+                <div class="phone-number">
+                  085795580512
+                </div>
+                <p class="address-detail">
+                  Jl. Soka No. 26, Merdeka, Sumur Bandung, KotaBandung – Jawa Barat.<br>
+                  Sumur bandung, Kota Bandung, 40113
+                </p>
+              </div>
+              <div class="right-wrapper change-address-button-wrapper">
+                <button type="button" class="btn btn-white btn-edit" data-toggle="modal" data-target="#">
+                  <i class="fa fa-edit" aria-hidden="true"></i> Ubah
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="box-border address-box">
+            <div class="flex-wrapper">
+              <div class="flex-small">
+                <div class="custom-control custom-radio">
+                  <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                  <label class="custom-control-label" for="customRadio2"></label>
+                </div>
+              </div>
+              <div class="left-wrapper">
+                <span class="receiver-name bold">Tiara Sari</span> <span class="address-name">Rumah</span>
+                <div class="phone-number">
+                  085795580512
+                </div>
+                <p class="address-detail">
+                  Jl. Soka No. 26, Merdeka, Sumur Bandung, KotaBandung – Jawa Barat.<br>
+                  Sumur bandung, Kota Bandung, 40113
+                </p>
+              </div>
+              <div class="right-wrapper change-address-button-wrapper">
+                <button type="button" class="btn btn-white btn-edit" data-toggle="modal" data-target="#">
+                  <i class="fa fa-edit" aria-hidden="true"></i> Ubah
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mobile View -->
+        <div class="d-block d-sm-none">
+          <Table class="address-table">
+            <tr>
+              <td>
+                <span class="receiver-name bold">Agus Andri Putra</span> <span class="address-name">Rumah</span>
+                <div class="phone-number">
+                  085795580512
+                </div>
+                <p class="address-detail">
+                  Jl. Soka No. 26, Merdeka, Sumur Bandung, KotaBandung – Jawa Barat.<br>
+                  Sumur bandung, Kota Bandung, 40113
+                </p>
+              </td>
+              <td>
+                <div class="custom-control custom-radio">
+                  <input type="radio" id="customRadio2Mob" name="customRadio" class="custom-control-input">
+                  <label class="custom-control-label" for="customRadio2Mob"></label>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="#"><i class="fa fa-edit" aria-hidden="true"></i> Ubah</a>
+              </td>
+            </tr>
+          </Table>
+          <div class="divider"></div>
+          <Table class="address-table">
+            <tr>
+              <td>
+                <span class="receiver-name bold">Tiara Sari</span> <span class="address-name">Rumah</span>
+                <div class="phone-number">
+                  085795580512
+                </div>
+                <p class="address-detail">
+                  Jl. Soka No. 26, Merdeka, Sumur Bandung, KotaBandung – Jawa Barat.<br>
+                  Sumur bandung, Kota Bandung, 40113
+                </p>
+              </td>
+              <td>
+                <div class="custom-control custom-radio">
+                  <input type="radio" id="customRadio1Mob" name="customRadio" class="custom-control-input">
+                  <label class="custom-control-label" for="customRadio1Mob"></label>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="#"><i class="fa fa-edit" aria-hidden="true"></i> Ubah</a>
+              </td>
+            </tr>
+          </Table>
+        </div>
+      </div>
+      <div class="modal-footer no-border d-none d-sm-block">
+        <div class="row">
+          <div class="col-6">
+            <a href="#" class="btn btn-secondary light-btn float-left" data-target="#NewAddress" data-toggle="modal">Tambah Alamat Baru</a>
+          </div>
+          <div class="col-6">
+            <a href="#" class="btn btn-secondary gradient-ocean-blue float-right">Pakai Alamat Ini</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Add New Address -->
+<div class="modal change-address fade" id="NewAddress" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Tambah Alamat Baru</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <!-- Desktop View -->
+      <div class="modal-body d-none d-sm-block">
+        <div class="form-new-address">
+          <form>
+            <div class="form-group">
+              <label>Label Alamat</label>
+              <input type="text" class="form-control" placeholder="Rumah"/>
+              <small id="" class="form-text text-muted">Contoh: Alamat Rumah, Alamat Kantor, Apartemen, Dropship</small>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="">Nama Penerima</label>
+                <input type="text" class="form-control" id="" placeholder="Nama Penerima">
+              </div>
+              <div class="form-group col-md-6">
+                <label for="">Nomor HP</label>
+                <input type="text" class="form-control" id="" placeholder="Nomor HP">
+                <small id="" class="form-text text-muted">Angka [0-9], Contoh: 085123456789</small>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-7 search right">
+                <label for="">Kota Atau Kecamatan</label>
+                <input type="text" class="form-control" id="" placeholder="Tulis Nama Alamat / Kota / Kecamatan tujuan pengiriman">
+                <button class="right-position"><i class="fa fa-search" aria-hidden="true"></i></button>
+              </div>
+              <div class="form-group col-md-5">
+                <label for="">Kode Pos</label>
+                <input type="text" class="form-control" id="" placeholder="Kode Pos">
+              </div>
+            </div>
+            <div class="form-group">
+              <textarea class="form-control" placeholder="Isi dengan nama jalan, nomor rumah, nomor kompleks, nama gedung"></textarea>
+            </div>
+          </form>
+        </div>
+      </div>
+      <!-- Mobile View -->
+      <div class="modal-body d-block d-sm-none">
+        <div class="form-new-address-mobile">
+          <form>
+            <div class="form-group">
+              <label>Label Alamat</label>
+              <input type="text" class="form-control" placeholder="Rumah"/>
+              <small id="" class="form-text text-muted">Contoh: Alamat Rumah, Alamat Kantor, Apartemen, Dropship</small>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-6 col-12">
+                <label for="">Nama Penerima</label>
+                <input type="text" class="form-control" id="" placeholder="Nama Penerima">
+              </div>
+              <div class="form-group col-md-6 col-12">
+                <label for="">Nomor HP</label>
+                <input type="text" class="form-control" id="" placeholder="Nomor HP">
+                <small id="" class="form-text text-muted">Angka [0-9], Contoh: 085123456789</small>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-7 search right col-12">
+                <label for="">Kota Atau Kecamatan</label>
+                <input type="text" class="form-control" id="" placeholder="Tulis Nama Alamat / Kota / Kecamatan tujuan pengiriman">
+                <button class="right-position"><i class="fa fa-search" aria-hidden="true"></i></button>
+              </div>
+              <div class="form-group col-md-5 col-12">
+                <label for="">Kode Pos</label>
+                <input type="text" class="form-control" id="" placeholder="Kode Pos">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="">Alamat</label>
+              <textarea class="form-control" placeholder="Isi dengan nama jalan, nomor rumah, nomor kompleks, nama gedung"></textarea>
+              <small id="" class="form-text text-muted">Minimal 20 karakter</small>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="modal-footer d-block d-sm-none">
+        <a href="#" class="btn btn-secondary light-btn w-100 gradient-ocean-blue " data-dismiss="modal">Simpan</a>
+      </div>
+      <div class="modal-footer no-border d-none d-sm-block">
+        <div class="row">
+          <div class="col-6">
+            <a href="#" class="btn btn-secondary light-btn float-right" data-dismiss="modal">Batal</a>
+          </div>
+          <div class="col-6">
+            <a href="#" class="btn btn-secondary gradient-ocean-blue float-left">Tambah</a>
+          </div>
+        </div>
       </div>
     </div>
   </div>
