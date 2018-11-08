@@ -6,15 +6,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>General Theme | Member of plasa.com</title>
-  <link rel="shortcut icon" href="assets/img/favicon.png">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
     crossorigin="anonymous">
   <link href="assets/css/font-awesome.min.css" rel="stylesheet">
   <link href="assets/css/style.css" rel="stylesheet">
   <link href="assets/css/responsive-style.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
-  <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
 
   <script src="https://code.jquery.com/jquery-3.0.0.slim.min.js" integrity="sha256-Rf4BadfyCtsvHmO89BUZcbYvNNvZvOT08ALfEzvCsD0="
     crossorigin="anonymous"></script>
@@ -22,7 +19,7 @@
     crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
-  <script src="assets/js/owl.carousel.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -58,7 +55,7 @@
           <div class="basket-header-text"><i class="fa fa-truck" aria-hidden="true"></i> Kurir Pengiriman</div>
           <div class="box-border shipper">
             <div class="heading-basket">
-              <span class="label-sold-by">Penjual:</span> <span class="seller-name bold">anugrah spesialis sarung</span> 
+              <span class="label-sold-by">Penjual:</span> <span class="seller-name bold">anugrah spesialis sarung</span>
             </div>
             <div class="d-flex">
               <div class="flex-fifty">
@@ -69,7 +66,9 @@
                     </div>
                   </div>
                   <div class="w-100 p-2">
-                    <div class="product-name"><p>sarung jok avanza xenia mobilio brv</p></div>
+                    <div class="product-name">
+                      <p>sarung jok avanza xenia mobilio brv</p>
+                    </div>
                     <div class="price-product bold blue-color f-18">Rp 35.000</div>
                     <div class="d-block">
                       <div class="inline-block">
@@ -87,13 +86,65 @@
                 </div>
               </div>
               <div class="flex-fifty p-2">
-                <div class="product-name bold m"><p>Kurir Pengiriman</p></div>
-                <div class="select-group">
-                  <select class="form-control">
-                    <option selected>JNE</option>
-                    <option>TIKI</option>
-                    <option>J&T</option>
-                  </select>
+                <div class="product-name bold m">
+                  <p>Kurir Pengiriman</p>
+                </div>
+                <div class="dropdown-area">
+                  <div id="inputSelected" class="input-wrapper">
+                    <div class="selected-label selected-courier">
+                      Reguler (1-2 hari) - JNE Reg
+                    </div>
+                  </div>
+                  <div id="optionSelection" class="options-box">
+                    <div class="scroll-area shipping--rounded-scrollbar">
+                      <div class="sections-wrapper">
+                        <div class="section">
+                          <div class="section-title">Next Day</div>
+                          <div class="items-wrapper">
+                            <div class="item">
+                              <div class="flex-sides">
+                                <div class="left-side">
+                                  <div class="name">JNE</div>
+                                  <div class="time">1 hari</div>
+                                </div>
+                                <div class="right-side">
+                                  <div class="price">Rp 22.000</div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="section">
+                          <div class="section-title">Reguler</div>
+                          <div class="items-wrapper">
+                            <div class="item">
+                              <div class="flex-sides">
+                                <div class="left-side">
+                                  <div class="name">JNE Reg</div>
+                                  <div class="time">1-2 hari</div>
+                                </div>
+                                <div class="right-side">
+                                  <div class="price">Rp 11.000</div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="item">
+                              <div class="flex-sides">
+                                <div class="left-side">
+                                  <div class="name">JNE OKE</div>
+                                  <div class="time">2-3 hari</div>
+                                </div>
+                                <div class="right-side">
+                                  <div class="price">Rp 10.000</div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="dropdown-note">Perkiraan tiba dihitung sejak pesanan dikirim</div>
+                  </div>
                 </div>
                 <div class="check">
                   <div class="custom-control custom-checkbox">
@@ -102,7 +153,8 @@
                   </div>
                   <div class="custom-control custom-checkbox">
                     <input type="checkbox" class="custom-control-input" id="customCheck2">
-                    <label class="custom-control-label" for="customCheck2">Dropshiper <a href="#"><i class="fa fa-info-circle" aria-hidden="true"></i></a></label>
+                    <label class="custom-control-label" for="customCheck2">Dropshiper <a href="#"><i class="fa fa-info-circle"
+                          aria-hidden="true"></i></a></label>
                   </div>
                 </div>
               </div>
@@ -138,7 +190,8 @@
               </div>
             </div>
             <div class="description">
-              <p>Dengan mengaktifkan asuransi, Saya menyetujui <a class="link magenta-color" href="#">syarat dan ketentuan yang berlaku.</a></p>
+              <p>Dengan mengaktifkan asuransi, Saya menyetujui <a class="link magenta-color" href="#">syarat dan
+                  ketentuan yang berlaku.</a></p>
             </div>
             <div class="divider"></div>
             <div class="flex-wrapper">
@@ -151,7 +204,8 @@
             </div>
             <div class="custom-control custom-checkbox">
               <input type="checkbox" class="custom-control-input" id="customCheck3">
-              <label class="custom-control-label" for="customCheck3">TopDonasi <a href="#"><i class="fa fa-info-circle" aria-hidden="true"></i></a></label>
+              <label class="custom-control-label" for="customCheck3">TopDonasi <a href="#"><i class="fa fa-info-circle"
+                    aria-hidden="true"></i></a></label>
             </div>
             <button class="btn gradient-ocean-blue w-100" data-toggle="modal" data-target="#exampleModal">
               Bayar
@@ -184,20 +238,32 @@
               </div>
             </div>
             <div class="w-100">
-              <div class="product-name"><p>sarung jok avanza xenia mobilio brv</p></div>
+              <div class="product-name">
+                <p>sarung jok avanza xenia mobilio brv</p>
+              </div>
               <div class="detail-label">2 Barang (6,50 kg)</div>
               <div class="price-product bold blue-color f-18">Rp 35.000</div>
             </div>
           </div>
-          <div class="subtotal d-block" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          <div class="subtotal d-block" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
+            aria-controls="collapseExample">
             <div class="inline-block">Subtotal</div>
             <div class="inline-block text-right">Rp. 44.000</div>
           </div>
           <div class="collapse" id="collapseExample">
             <ul>
-              <li class="d-block"><div class="inline-block">Harga (1 barang)</div><div class="inline-block text-right">Rp 35.000</div></li>
-              <li class="d-block"><div class="inline-block">Ongkos Kirim</div><div class="inline-block text-right">Rp 5.000</div></li>
-              <li class="d-block"><div class="inline-block">Asuransi Pengiriman</div><div class="inline-block text-right">Rp 50</div></li>
+              <li class="d-block">
+                <div class="inline-block">Harga (1 barang)</div>
+                <div class="inline-block text-right">Rp 35.000</div>
+              </li>
+              <li class="d-block">
+                <div class="inline-block">Ongkos Kirim</div>
+                <div class="inline-block text-right">Rp 5.000</div>
+              </li>
+              <li class="d-block">
+                <div class="inline-block">Asuransi Pengiriman</div>
+                <div class="inline-block text-right">Rp 50</div>
+              </li>
             </ul>
           </div>
         </div>
@@ -208,21 +274,35 @@
           <div class="basket-header-text">
             <p>Transfer Bank (Verifikasi manual)</p>
           </div>
-          <ul class="methode"> 
+          <ul class="methode">
             <li class="bank"><a href="#"><img src="assets/img/bca.jpg" class="img-fluid"><span>Bank BCA</span> <i class="i fa fa-chevron-right"></i></a></li>
-            <li class="bank"><a href="#"><img src="assets/img/mandiri.jpg" class="img-fluid"><span>Bank Manidi</span> <i class="i fa fa-chevron-right"></i></a></li>
-            <li class="bank"><a href="#"><img src="assets/img/cimb.png" class="img-fluid"><span>Bank CIMB</span> <i class="i fa fa-chevron-right"></i></a></li>
+            <li class="bank"><a href="#"><img src="assets/img/mandiri.jpg" class="img-fluid"><span>Bank Manidi</span>
+                <i class="i fa fa-chevron-right"></i></a></li>
+            <li class="bank"><a href="#"><img src="assets/img/cimb.png" class="img-fluid"><span>Bank CIMB</span> <i
+                  class="i fa fa-chevron-right"></i></a></li>
           </ul>
           <div class="basket-header-text">
             <p>Transfer Virtual (Verifikasi Otomatis)</p>
           </div>
-          <ul class="methode"> 
+          <ul class="methode">
             <li class="bank"><a href="#"><img src="assets/img/bca.jpg" class="img-fluid"><span>Bank BCA</span> <i class="i fa fa-chevron-right"></i></a></li>
-            <li class="bank"><a href="#"><img src="assets/img/mandiri.jpg" class="img-fluid"><span>Bank Manidi</span> <i class="i fa fa-chevron-right"></i></a></li>
-            <li class="bank"><a href="#"><img src="assets/img/cimb.png" class="img-fluid"><span>Bank CIMB</span> <i class="i fa fa-chevron-right"></i></a></li>
+            <li class="bank"><a href="#"><img src="assets/img/mandiri.jpg" class="img-fluid"><span>Bank Manidi</span>
+                <i class="i fa fa-chevron-right"></i></a></li>
+            <li class="bank"><a href="#"><img src="assets/img/cimb.png" class="img-fluid"><span>Bank CIMB</span> <i
+                  class="i fa fa-chevron-right"></i></a></li>
           </ul>
         </div>
       </div>
     </div>
   </div>
 </div>
+
+
+<script>
+  $(document).ready(function(){
+      $("#optionSelection").hide();
+      $("#inputSelected").click(function(){
+          $("#optionSelection").slideToggle();
+      });
+  });
+</script>

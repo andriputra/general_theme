@@ -1128,3 +1128,76 @@ ul.under-list li > div:last-child{
 .virtual-transaction > ul >li{
     margin-bottom: 10px;
 } 
+.dropdown-area{
+    position: relative;
+    margin-bottom: 15px;
+}
+.dropdown-area > .options-box{
+    display: block;
+    border: 1px solid #e5e9ec;
+    z-index: 1;
+    display: block;
+    border: 1px solid #e5e9ec;
+    position: absolute;
+    background: #ffffff;
+    width: 100%;
+}
+.dropdown-area > .options-box > .scroll-area{
+    height: auto;
+    max-height: 200px;
+    overflow: auto;
+}
+.dropdown-area > .options-box > .scroll-area > .sections-wrapper > .section > .section-title{
+    font-weight: 600;
+    width: calc(100% - (2 * 10px));
+    margin: auto;
+    padding: 15px 0 5px;
+}
+.dropdown-area > .options-box > .scroll-area > .sections-wrapper > .section > .items-wrapper > .item {
+    cursor: pointer;
+    padding: 5px 10px;
+}
+.dropdown-area > .options-box > .scroll-area > .sections-wrapper > .section > .items-wrapper > .item:hover {
+    background-color: rgba(0,0,0,.03);
+}
+.dropdown-area > .options-box > .scroll-area > .sections-wrapper > .section > .items-wrapper > .item .flex-sides{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #888888;
+    font-size: 13px;
+    position: relative;
+}
+.dropdown-area > .options-box > .scroll-area > .sections-wrapper > .section > .items-wrapper > .item .flex-sides:after{
+    position: absolute;
+    content: '';
+    border-bottom: 1px solid #e4e9ec;
+    width: 100%;
+    left: 0px;
+    bottom : -5px;
+}
+.dropdown-area > .options-box > .scroll-area > .sections-wrapper > .section > .items-wrapper > .item .flex-sides .left-sides,
+.dropdown-area > .options-box > .scroll-area > .sections-wrapper > .section > .items-wrapper > .item .flex-sides .right-sides{
+    font-size: 12px;
+}
+.dropdown-area > .options-box > .dropdown-note{
+    font-size: 11px;
+    color: rgba(0,0,0,.38);
+    text-align: center;
+    padding: 7px 0;
+    border-top: 1px solid #e0e0e0;
+}
+.dropdown-area .input-wrapper{
+    border: 1px solid #cdd4d9;
+    padding: 9px 20px 9px 9px;
+    border-radius: 5px;
+    position: relative;
+}
+.dropdown-area .input-wrapper:after{
+    content: "\f0d7";
+    font-family: "FontAwesome";
+    position: absolute;
+    right: 7px;
+    top: 5px;
+    font-size: 20px;
+}
