@@ -1215,3 +1215,11 @@ ul.under-list li > div:last-child{
     top: 5px;
     font-size: 20px;
 }
+.support-tracking > .flex-wrapper {
+    align-items: flex-start;
+}
+.support-tracking > .flex-wrapper > .flex-small{
+    min-width: 30%;
+    margin-right: 10px;
+    flex: 0;
+}
