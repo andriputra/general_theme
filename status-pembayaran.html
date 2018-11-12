@@ -23,6 +23,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
   <script src="assets/js/owl.carousel.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -57,9 +58,12 @@
           </div>
           <div class="flex-small">
             <div class="box-right">
-              <a href="#" class="mb-10 inline-block">Batalkan Transaksi</a>
-              <img src="assets//img/indo.png" class="img-fluid mb-10"/>
-              <button type="button" class="btn w-100"><i class="fa fa-question-circle-o" aria-hidden="true"></i> Cara Pembayaran</button>
+              <div class="mb-20">
+                  <a href="#" class="inline-block">Batalkan Transaksi</a>
+                  <img src="assets//img/indo.png" class="img-fluid mb-10"/>
+              </div>
+              <button type="button" class="btn w-100 mb-10"><i class="fa fa-question-circle-o" aria-hidden="true"></i> Cara Pembayaran</button>
+              <button type="button" class="btn w-100" data-target="#UploadTransfer" data-toggle="modal"> Unggah Bukti Pembayaran</button>
             </div>
           </div>
         </div>
@@ -68,3 +72,63 @@
   </div>
 </body>
 </html>
+
+<!-- Default Change Methode -->
+<div class="modal change-address fade" id="UploadTransfer" tabindex="-1" role="dialog" aria-labelledby="UploadTransfer" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="UploadTransfer">Unggah Bukti Pembayaran</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="block-gray mb-10">
+          <p><i class="fa fa-clock-o" aria-hidden="true"></i> Unggah bukti pembayaran dapat mempercepat verifikasi pembayaran</p>
+        </div>
+        <div class="desc-upload">
+          <p class="mb-15">Pastikan bukti pembayaran menampilkan:</p>
+          <div class="row">
+            <div class="col-md-6 col-12">
+              <ul>
+                <li class="mb-10">
+                  <p class="bold">Tanggal/Waktu Transfer</p>
+                  <p>contoh: tgl. 04/06/19 / jam 07:24:06</p>
+                </li>
+                <li class="mb-10">
+                  <p class="bold">Status Berhasil</p>
+                  <p>contoh: Transfer BERHASIL, Transaksi Sukses</p>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-6 col-12">
+              <ul>
+                <li class="mb-10">
+                  <p class="bold">Detail Penerima</p>
+                  <p>contoh: Transfer ke Rekening PT Tokopedia</p>
+                </li>
+                <li class="mb-10">
+                  <p class="bold">Jumlah Transfer</p>
+                  <p>contoh: Rp 123.456,00</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="block-gray border-dotted text-center p-40">
+            <img src="assets/img/icon-uploadPlaceholder.png" class="inline-block img-responsive w-4 mb-20"/>
+            <p class="f-12 mb-10">Format gambar: .JPG .JPEG, .PNG, max 10 MB</p>
+            <input type="file" id="imgupload" style="display:none"/> 
+            <button type="button" class="btn btn-action mb-20 gradient-ocean-blue" id="OpenImgUpload">Pilih gambar</button>
+            <p class="f-12">Atau tarik gambar kesini</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script>
+$('#OpenImgUpload').click(function(){ $('#imgupload').trigger('click'); });
+</script>

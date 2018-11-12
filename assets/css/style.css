@@ -306,11 +306,22 @@ p{
 .mb-30{
     margin-bottom: 30px;
 }
+.p-40{
+    padding: 40px !important;
+}
+.w-4{
+    width: 4%;
+}
 .orange{
     color: #fe7011;
 }
 .p-5{
     padding: 5px 5px;
+}
+.border-dotted{
+    border-style: dotted;
+    border-color: #e6e6e6;
+    border-width: 2px;
 }
 .breadcrumb{
     margin-top: 20px;
@@ -548,6 +559,9 @@ a.wishlist.active {
     width: 100%;
     flex-direction: row;
     align-items: center;
+}
+.flex-wrapper.status .flex-small{
+    flex: 0;
 }
 .flex-fifty{
     flex: 1 1 0;
