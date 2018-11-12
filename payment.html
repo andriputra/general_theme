@@ -23,6 +23,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
   <script src="assets/js/owl.carousel.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -88,12 +89,62 @@
               </div>
               <div class="flex-fifty p-2">
                 <div class="product-name bold m"><p>Kurir Pengiriman</p></div>
-                <div class="select-group">
-                  <select class="form-control">
-                    <option selected>JNE</option>
-                    <option>TIKI</option>
-                    <option>J&T</option>
-                  </select>
+                <div class="dropdown-area">
+                  <div id="inputSelected" class="input-wrapper">
+                    <div class="selected-label selected-courier">
+                      Reguler (1-2 hari) - JNE Reg
+                    </div>
+                  </div>
+                  <div id="optionSelection" class="options-box">
+                    <div class="scroll-area shipping--rounded-scrollbar">
+                      <div class="sections-wrapper">
+                        <div class="section">
+                          <div class="section-title">Next Day</div>
+                          <div class="items-wrapper">
+                            <div class="item">
+                              <div class="flex-sides">
+                                <div class="left-side">
+                                  <div class="name">JNE</div>
+                                  <div class="time">1 hari</div>
+                                </div>
+                                <div class="right-side">
+                                  <div class="price">Rp 22.000</div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="section">
+                          <div class="section-title">Reguler</div>
+                          <div class="items-wrapper">
+                            <div class="item">
+                              <div class="flex-sides">
+                                <div class="left-side">
+                                  <div class="name">JNE Reg</div>
+                                  <div class="time">1-2 hari</div>
+                                </div>
+                                <div class="right-side">
+                                  <div class="price">Rp 11.000</div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="item">
+                              <div class="flex-sides">
+                                <div class="left-side">
+                                  <div class="name">JNE OKE</div>
+                                  <div class="time">2-3 hari</div>
+                                </div>
+                                <div class="right-side">
+                                  <div class="price">Rp 10.000</div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="dropdown-note">Perkiraan tiba dihitung sejak pesanan dikirim</div>
+                  </div>
                 </div>
                 <div class="check">
                   <div class="custom-control custom-checkbox">
@@ -163,9 +214,9 @@
               <input type="checkbox" class="custom-control-input" id="customCheck3">
               <label class="custom-control-label" for="customCheck3">TopDonasi <a href="#"><i class="fa fa-info-circle" aria-hidden="true"></i></a></label>
             </div>
-            <button class="btn gradient-ocean-blue w-100" data-toggle="modal" data-target="#exampleModalIndomaret">
+            <a href="checkout.html" class="btn gradient-ocean-blue w-100" >
               Bayar
-            </button>
+            </a>
             <div class="divider"></div>
             <a href="#">
               <div class="flex-wrapper">
@@ -248,525 +299,11 @@
   </div>
 </div>
 
-<!-- Metode Pembayaran -->
-<div class="modal fade" id="exampleModalIndomaret" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Metode Pembayaran</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body payment-methode">
-        <div class="box-border">
-          <h6>Detail Tagihan</h6>
-          <div class="divider"></div>
-          <div class="d-flex">
-            <div class="flex-shrink-1 p-2">
-              <div class="thumbnails">
-                <img src="assets/img/katalog.jpg" class="img-fluid">
-              </div>
-            </div>
-            <div class="w-100">
-              <div class="product-name"><p>sarung jok avanza xenia mobilio brv</p></div>
-              <div class="detail-label">2 Barang (6,50 kg)</div>
-              <div class="price-product bold blue-color f-18">Rp 35.000</div>
-            </div>
-          </div>
-          <div class="subtotal d-block" data-toggle="collapse" href="#collapseExampleindo" role="button" aria-expanded="false" aria-controls="collapseExample">
-            <div class="inline-block">Subtotal</div>
-            <div class="inline-block text-right">Rp. 44.000 <i class="fa fa-chevron-down"></i></div>
-          </div>
-          <div class="collapse" id="collapseExampleindo">
-            <ul>
-              <li class="d-block"><div class="inline-block">Harga (1 barang)</div><div class="inline-block text-right">Rp 35.000</div></li>
-              <li class="d-block"><div class="inline-block">Ongkos Kirim</div><div class="inline-block text-right">Rp 5.000</div></li>
-              <li class="d-block"><div class="inline-block">Asuransi Pengiriman</div><div class="inline-block text-right">Rp 50</div></li>
-            </ul>
-          </div>
-        </div>
-        <div class="box-border">
-          <div class="basket-header-text">
-            <h6>Indomaret/Ceriamart <img src="assets/img/indo.png" class="img-fluid partner-logo"></h6>
-          </div>
-          <div class="box-border-blue">
-            <p>Gratis biaya layanan untuk pembayaran melalui JNE periode 3 - 4 November 2018. Segera selesaikan pembayaran Anda di JNE terdekat karena kuota terbatas.</p>
-          </div>
-          <div class="box-border-gray text-center">
-            <img src="assets/img/indomaret.png" class="img-fluid center-pos">
-            <p class="text-center"><strong>Dapatkan kode pembayaran setelah menekan tombol bayar</strong>, tunjukan ke kasir dan bayar sesuai tagihan</p>
-          </div>
-        </div>
-        <div class="choose-methode">
-          <a href="#" data-toggle="modal" data-target="#MethodeOther">Choose Metode Pembayaran Lainnya</a>
-        </div>
-      </div>
-      <div class="modal-footer">
-        <a href="payment-merchant.html" class="btn btn-secondary gradient-ocean-blue w-100">Bayar</a>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Other Methode -->
-<div class="modal fade" id="MethodeOther" tabindex="-1" role="dialog" aria-labelledby="MethodeOther" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Metode Pembayaran</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body payment-methode choose-other">
-        <div class="box-border">
-          <h6>Detail Tagihan</h6>
-          <div class="divider"></div>
-          <div class="d-flex">
-            <div class="flex-shrink-1 p-2">
-              <div class="thumbnails">
-                <img src="assets/img/katalog.jpg" class="img-fluid">
-              </div>
-            </div>
-            <div class="w-100">
-              <div class="product-name"><p>sarung jok avanza xenia mobilio brv</p></div>
-              <div class="detail-label">2 Barang (6,50 kg)</div>
-              <div class="price-product bold blue-color f-18">Rp 35.000</div>
-            </div>
-          </div>
-          <div class="subtotal d-block" data-toggle="collapse" href="#collapseOther" role="button" aria-expanded="false" aria-controls="collapseExample">
-            <div class="inline-block">Subtotal</div>
-            <div class="inline-block text-right">Rp. 44.000 <i class="fa fa-chevron-down"></i></div>
-          </div>
-          <div class="collapse" id="collapseOther">
-            <ul>
-              <li class="d-block"><div class="inline-block">Harga (1 barang)</div><div class="inline-block text-right">Rp 35.000</div></li>
-              <li class="d-block"><div class="inline-block">Ongkos Kirim</div><div class="inline-block text-right">Rp 5.000</div></li>
-              <li class="d-block"><div class="inline-block">Asuransi Pengiriman</div><div class="inline-block text-right">Rp 50</div></li>
-            </ul>
-          </div>
-        </div>
-        <div class="box-border">
-          <div class="basket-header-text">
-            <h6>Transfer Bank (Verifikasi Manual)</h6>
-            <div class="divider"></div>
-          </div>
-          <ul class="under-list">
-            <li data-toggle="modal" data-target="#TransferModal">
-              <div class="bank-logo"><img src="assets/img/bca_bank.jpg" class="img-fluid"/></div>
-              <div class="text"><p>Bank BCA</p><span>Diverifikasi Setelah 07:00 WIB</span></div>
-              <div class="chevron-right text-right"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
-            </li>
-            <li data-toggle="modal" data-target="#TransferModal">
-              <div class="bank-logo"><img src="assets/img/bni_bank.png" class="img-fluid"/></div>
-              <div class="text"><p>Bank BNI</p><span>Diverifikasi Setelah 07:00 WIB</span></div>
-              <div class="chevron-right text-right"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
-            </li>
-            <li data-toggle="modal" data-target="#TransferModal">
-              <div class="bank-logo"><img src="assets/img/danamon.png" class="img-fluid"/></div>
-              <div class="text"><p>Bank Danamon</p><span>Diverifikasi Setelah 07:00 WIB</span></div>
-              <div class="chevron-right text-right"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
-            </li>
-          </ul>
-        </div>
-        <div class="box-border">
-          <div class="basket-header-text">
-            <h6>Transfer Virtual Account (Verifikasi Otomatis)</h6>
-            <div class="divider"></div>
-          </div>
-          <ul class="under-list">
-            <li data-toggle="modal" data-target="#VAModal">
-              <div class="bank-logo"><img src="assets/img/bca_bank.jpg" class="img-fluid"/></div>
-              <div class="text"><p>BCA Virtual Account</p></div>
-              <div class="chevron-right text-right"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
-            </li>
-            <li data-toggle="modal" data-target="#VAModal">
-              <div class="bank-logo"><img src="assets/img/bni_bank.png" class="img-fluid"/></div>
-              <div class="text"><p>BNI Virtual Account</p></div>
-              <div class="chevron-right text-right"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
-            </li>
-            <li data-toggle="modal" data-target="#VAModal">
-              <div class="bank-logo"><img src="assets/img/danamon.png" class="img-fluid"/></div>
-              <div class="text"><p>Danamon Virtual Account</p></div>
-              <div class="chevron-right text-right"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Transfer Methode -->
-<div class="modal fade" id="TransferModal" tabindex="-1" role="dialog" aria-labelledby="TransferModal" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Pembayaran</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body payment-methode">
-        <div class="box-border">
-          <h6>Detail Tagihan</h6>
-          <div class="divider"></div>
-          <div class="d-flex">
-            <div class="flex-shrink-1 p-2">
-              <div class="thumbnails">
-                <img src="assets/img/katalog.jpg" class="img-fluid">
-              </div>
-            </div>
-            <div class="w-100">
-              <div class="product-name"><p>sarung jok avanza xenia mobilio brv</p></div>
-              <div class="detail-label">2 Barang (6,50 kg)</div>
-              <div class="price-product bold blue-color f-18">Rp 35.000</div>
-            </div>
-          </div>
-          <div class="subtotal d-block" data-toggle="collapse" href="#collapseTransfer" role="button" aria-expanded="false" aria-controls="collapseExample">
-            <div class="inline-block">Subtotal</div>
-            <div class="inline-block text-right">Rp. 44.000 <i class="fa fa-chevron-down"></i></div>
-          </div>
-          <div class="collapse" id="collapseTransfer">
-            <ul>
-              <li class="d-block"><div class="inline-block">Harga (1 barang)</div><div class="inline-block text-right">Rp 35.000</div></li>
-              <li class="d-block"><div class="inline-block">Ongkos Kirim</div><div class="inline-block text-right">Rp 5.000</div></li>
-              <li class="d-block"><div class="inline-block">Asuransi Pengiriman</div><div class="inline-block text-right">Rp 50</div></li>
-            </ul>
-          </div>
-        </div>
-        <div class="box-border">
-          <div class="basket-header-text">
-            <h6>Transfer Bank BCA</h6>
-            <div class="divider"></div>
-          </div>
-          <div class="form-transfer">
-            <form>
-              <div class="form-group">
-                <label>No. Rekening Anda</label>
-                <input class="form-control" type="text"/>
-                <small>Masukan nomor rekening sesuai buku tabungan</small>
-              </div>
-              <div class="form-group">
-                <label>Nama Pemilik Rekening</label>
-                <input class="form-control" type="text"/>
-                <small>Masukan nama pemilik rekening sesuai buku tabungan</small>
-              </div>
-              <div class="description">
-                  <p>Jika melalui Teller, isi <strong>Nama Pemilik Rekening</strong>
-                     dengan nama Penyetor dan <strong>Nomor Rekening</strong> dengan 0000</p>
-                  <p>Demi keamanan transaksi Anda, pastikan untuk <strong>tidak menginformasikan bukti dan data pembayaran kepada pihak manapun kecuali Tokopedia.</strong></p>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-      <div class="modal-footer">
-        <a href="#" class="btn btn-secondary gradient-ocean-blue w-100">Bayar</a>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Virtual Account Modal -->
-<div class="modal fade" id="VAModal" tabindex="-1" role="dialog" aria-labelledby="VAModal" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Pembayaran</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body payment-methode">
-        <div class="box-border">
-          <h6>Detail Tagihan</h6>
-          <div class="divider"></div>
-          <div class="d-flex">
-            <div class="flex-shrink-1 p-2">
-              <div class="thumbnails">
-                <img src="assets/img/katalog.jpg" class="img-fluid">
-              </div>
-            </div>
-            <div class="w-100">
-              <div class="product-name"><p>sarung jok avanza xenia mobilio brv</p></div>
-              <div class="detail-label">2 Barang (6,50 kg)</div>
-              <div class="price-product bold blue-color f-18">Rp 35.000</div>
-            </div>
-          </div>
-          <div class="subtotal d-block" data-toggle="collapse" href="#collapseVirtual" role="button" aria-expanded="false" aria-controls="collapseExample">
-            <div class="inline-block">Subtotal</div>
-            <div class="inline-block text-right">Rp. 44.000 <i class="fa fa-chevron-down"></i></div>
-          </div>
-          <div class="collapse" id="collapseVirtual">
-            <ul>
-              <li class="d-block"><div class="inline-block">Harga (1 barang)</div><div class="inline-block text-right">Rp 35.000</div></li>
-              <li class="d-block"><div class="inline-block">Ongkos Kirim</div><div class="inline-block text-right">Rp 5.000</div></li>
-              <li class="d-block"><div class="inline-block">Asuransi Pengiriman</div><div class="inline-block text-right">Rp 50</div></li>
-            </ul>
-          </div>
-        </div>
-        <div class="box-border">
-          <div class="basket-header-text">
-            <h6>BCA Virtual Account</h6>
-            <div class="divider"></div>
-          </div>
-          <div class="virtual-transaction">
-            <div class="box-yellow">
-              <p>Pastikan transaksi BCA Virtual Account Anda telah terverifikasi sebelum melakukan transaksi kembali dengan metode yang sama.</p>
-            </div>
-            <ul>
-              <li>Periksa kembali data pembayaran Anda sebelum melanjutkan transaksi.</li>
-              <li>Anda akan mendapatkan kode pembayaran BCA Virtual Account yang akan digunakan untuk membayar transaksi ini di berbagai channel pembayaran BCA.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="modal-footer">
-        <a href="#" class="btn btn-secondary gradient-ocean-blue w-100">Bayar</a>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Ganti Alamat -->
-<div class="modal change-address fade" id="gantiAlamat" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Pilih Alamat Pengiriman</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <div class="form-group search left">
-          <input class="form-control" type='text' placeholder="Tulis Nama Alamat/Kota/Kecamatan tujuan pengiriman">
-          <button class="left-position"><i class="fa fa-search" aria-hidden="true"></i></button>
-        </div>
-        <!-- Desktop View -->
-        <div class="d-none d-sm-block">
-          <div class="box-border address-box">
-            <div class="flex-wrapper">
-              <div class="flex-small">
-                <div class="custom-control custom-radio">
-                  <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
-                  <label class="custom-control-label" for="customRadio1"></label>
-                </div>
-              </div>
-              <div class="left-wrapper">
-                <span class="receiver-name bold">Agus Andri Putra</span> <span class="address-name">Rumah</span>
-                <div class="phone-number">
-                  085795580512
-                </div>
-                <p class="address-detail">
-                  Jl. Soka No. 26, Merdeka, Sumur Bandung, KotaBandung – Jawa Barat.<br>
-                  Sumur bandung, Kota Bandung, 40113
-                </p>
-              </div>
-              <div class="right-wrapper change-address-button-wrapper">
-                <button type="button" class="btn btn-white btn-edit" data-toggle="modal" data-target="#">
-                  <i class="fa fa-edit" aria-hidden="true"></i> Ubah
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="box-border address-box">
-            <div class="flex-wrapper">
-              <div class="flex-small">
-                <div class="custom-control custom-radio">
-                  <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
-                  <label class="custom-control-label" for="customRadio2"></label>
-                </div>
-              </div>
-              <div class="left-wrapper">
-                <span class="receiver-name bold">Tiara Sari</span> <span class="address-name">Rumah</span>
-                <div class="phone-number">
-                  085795580512
-                </div>
-                <p class="address-detail">
-                  Jl. Soka No. 26, Merdeka, Sumur Bandung, KotaBandung – Jawa Barat.<br>
-                  Sumur bandung, Kota Bandung, 40113
-                </p>
-              </div>
-              <div class="right-wrapper change-address-button-wrapper">
-                <button type="button" class="btn btn-white btn-edit" data-toggle="modal" data-target="#">
-                  <i class="fa fa-edit" aria-hidden="true"></i> Ubah
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Mobile View -->
-        <div class="d-block d-sm-none">
-          <Table class="address-table">
-            <tr>
-              <td>
-                <span class="receiver-name bold">Agus Andri Putra</span> <span class="address-name">Rumah</span>
-                <div class="phone-number">
-                  085795580512
-                </div>
-                <p class="address-detail">
-                  Jl. Soka No. 26, Merdeka, Sumur Bandung, KotaBandung – Jawa Barat.<br>
-                  Sumur bandung, Kota Bandung, 40113
-                </p>
-              </td>
-              <td>
-                <div class="custom-control custom-radio">
-                  <input type="radio" id="customRadio2Mob" name="customRadio" class="custom-control-input">
-                  <label class="custom-control-label" for="customRadio2Mob"></label>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <a href="#"><i class="fa fa-edit" aria-hidden="true"></i> Ubah</a>
-              </td>
-            </tr>
-          </Table>
-          <div class="divider"></div>
-          <Table class="address-table">
-            <tr>
-              <td>
-                <span class="receiver-name bold">Tiara Sari</span> <span class="address-name">Rumah</span>
-                <div class="phone-number">
-                  085795580512
-                </div>
-                <p class="address-detail">
-                  Jl. Soka No. 26, Merdeka, Sumur Bandung, KotaBandung – Jawa Barat.<br>
-                  Sumur bandung, Kota Bandung, 40113
-                </p>
-              </td>
-              <td>
-                <div class="custom-control custom-radio">
-                  <input type="radio" id="customRadio1Mob" name="customRadio" class="custom-control-input">
-                  <label class="custom-control-label" for="customRadio1Mob"></label>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <a href="#"><i class="fa fa-edit" aria-hidden="true"></i> Ubah</a>
-              </td>
-            </tr>
-          </Table>
-        </div>
-      </div>
-      <div class="modal-footer no-border d-none d-sm-block">
-        <div class="row">
-          <div class="col-6">
-            <a href="#" class="btn btn-secondary light-btn float-left" data-target="#NewAddress" data-toggle="modal">Tambah Alamat Baru</a>
-          </div>
-          <div class="col-6">
-            <a href="#" class="btn btn-secondary gradient-ocean-blue float-right">Pakai Alamat Ini</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Add New Address -->
-<div class="modal change-address fade" id="NewAddress" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Tambah Alamat Baru</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <!-- Desktop View -->
-      <div class="modal-body d-none d-sm-block">
-        <div class="form-new-address">
-          <form>
-            <div class="form-group">
-              <label>Label Alamat</label>
-              <input type="text" class="form-control" placeholder="Rumah"/>
-              <small id="" class="form-text text-muted">Contoh: Alamat Rumah, Alamat Kantor, Apartemen, Dropship</small>
-            </div>
-            <div class="form-row">
-              <div class="form-group col-md-6">
-                <label for="">Nama Penerima</label>
-                <input type="text" class="form-control" id="" placeholder="Nama Penerima">
-              </div>
-              <div class="form-group col-md-6">
-                <label for="">Nomor HP</label>
-                <input type="text" class="form-control" id="" placeholder="Nomor HP">
-                <small id="" class="form-text text-muted">Angka [0-9], Contoh: 085123456789</small>
-              </div>
-            </div>
-            <div class="form-row">
-              <div class="form-group col-md-7 search right">
-                <label for="">Kota Atau Kecamatan</label>
-                <input type="text" class="form-control" id="" placeholder="Tulis Nama Alamat / Kota / Kecamatan tujuan pengiriman">
-                <button class="right-position"><i class="fa fa-search" aria-hidden="true"></i></button>
-              </div>
-              <div class="form-group col-md-5">
-                <label for="">Kode Pos</label>
-                <input type="text" class="form-control" id="" placeholder="Kode Pos">
-              </div>
-            </div>
-            <div class="form-group">
-              <textarea class="form-control" placeholder="Isi dengan nama jalan, nomor rumah, nomor kompleks, nama gedung"></textarea>
-            </div>
-          </form>
-        </div>
-      </div>
-      <!-- Mobile View -->
-      <div class="modal-body d-block d-sm-none">
-        <div class="form-new-address-mobile">
-          <form>
-            <div class="form-group">
-              <label>Label Alamat</label>
-              <input type="text" class="form-control" placeholder="Rumah"/>
-              <small id="" class="form-text text-muted">Contoh: Alamat Rumah, Alamat Kantor, Apartemen, Dropship</small>
-            </div>
-            <div class="form-row">
-              <div class="form-group col-md-6 col-12">
-                <label for="">Nama Penerima</label>
-                <input type="text" class="form-control" id="" placeholder="Nama Penerima">
-              </div>
-              <div class="form-group col-md-6 col-12">
-                <label for="">Nomor HP</label>
-                <input type="text" class="form-control" id="" placeholder="Nomor HP">
-                <small id="" class="form-text text-muted">Angka [0-9], Contoh: 085123456789</small>
-              </div>
-            </div>
-            <div class="form-row">
-              <div class="form-group col-md-7 search right col-12">
-                <label for="">Kota Atau Kecamatan</label>
-                <input type="text" class="form-control" id="" placeholder="Tulis Nama Alamat / Kota / Kecamatan tujuan pengiriman">
-                <button class="right-position"><i class="fa fa-search" aria-hidden="true"></i></button>
-              </div>
-              <div class="form-group col-md-5 col-12">
-                <label for="">Kode Pos</label>
-                <input type="text" class="form-control" id="" placeholder="Kode Pos">
-              </div>
-            </div>
-            <div class="form-group">
-              <label for="">Alamat</label>
-              <textarea class="form-control" placeholder="Isi dengan nama jalan, nomor rumah, nomor kompleks, nama gedung"></textarea>
-              <small id="" class="form-text text-muted">Minimal 20 karakter</small>
-            </div>
-          </form>
-        </div>
-      </div>
-      <div class="modal-footer d-block d-sm-none">
-        <a href="#" class="btn btn-secondary light-btn w-100 gradient-ocean-blue " data-dismiss="modal">Simpan</a>
-      </div>
-      <div class="modal-footer no-border d-none d-sm-block">
-        <div class="row">
-          <div class="col-6">
-            <a href="#" class="btn btn-secondary light-btn float-right" data-dismiss="modal">Batal</a>
-          </div>
-          <div class="col-6">
-            <a href="#" class="btn btn-secondary gradient-ocean-blue float-left">Tambah</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+<script>
+  $(document).ready(function(){
+      $("#optionSelection").hide();
+      $("#inputSelected").click(function(){
+          $("#optionSelection").slideToggle();
+      });
+  });
+</script>
